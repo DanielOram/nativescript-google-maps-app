@@ -7,6 +7,7 @@
     "id": "org.nativescript.nativescriptgooglemapsapp"
   },
   "dependencies": {
+    "nativescript-google-maps-sdk": "^1.4.3",
     "nativescript-theme-core": "^0.2.1",
     "tns-core-modules": "2.4.4"
   },
