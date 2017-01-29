@@ -4,7 +4,7 @@ of which NativeScript renders with a platform-specific iOS or Android native con
 You can find a full list of user interface components you can use in your app at
 https://docs.nativescript.org/ui/components.
 -->
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" xmlns:maps="nativescript-google-maps-sdk" navigatingTo="onNavigatingTo">
     <!--
     The StackLayout stacks UI components on the screen—either vertically or horizontally.
     In this case, the StackLayout does vertical stacking; you can change the stacking to
@@ -21,4 +21,12 @@ https://docs.nativescript.org/ui/components.
         <Button text="TAP" tap="{{ onTap }}" class="btn btn-primary btn-active"/>
         <Label text="{{ message }}" class="h2 text-center" textWrap="true"/>
     </StackLayout>
+    <GridLayout>
+        <maps:mapView latitude="{{ latitude }}" longitude="{{ longitude }}" 
+    								zoom="{{ zoom }}" bearing="{{ bearing }}" 
+    								tilt="{{ tilt }}" padding="{{ padding }}" mapReady="onMapReady"  
+   								markerSelect="onMarkerSelect" markerBeginDragging="onMarkerBeginDragging"
+   								markerEndDragging="onMarkerEndDragging" markerDrag="onMarkerDrag"
+   								cameraChanged="onCameraChanged" />
+    </GridLayout>
 </Page>
