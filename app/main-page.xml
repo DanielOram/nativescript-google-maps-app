@@ -27,6 +27,7 @@ https://docs.nativescript.org/ui/components.
     								tilt="{{ tilt }}" padding="{{ padding }}" mapReady="onMapReady"  
    								markerSelect="onMarkerSelect" markerBeginDragging="onMarkerBeginDragging"
    								markerEndDragging="onMarkerEndDragging" markerDrag="onMarkerDrag"
-   								cameraChanged="onCameraChanged" />
+   								cameraChanged="onCameraChanged" coordinateTapped="onCoordinateTapped"
+                                coordinateLongPress="onCoordinateLongPress" />
     </GridLayout>
 </Page>
